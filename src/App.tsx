@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import PhotoSticker from './components/PhotoSticker'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,12 +21,13 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <PhotoSticker url={'./src/assets/amy.png'} />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
       <p className="read-the-docs text-3xl font-bold underline">
-        Click on the Vite and React logos to learn more
+        Click on the Vite and React logos to learn
       </p>
     </div>
   )
