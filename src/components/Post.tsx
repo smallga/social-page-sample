@@ -9,7 +9,7 @@ export default function Post(props: PostProps) {
 	return (
 		<div className="w-full">
 			<div className="h-8 w-full flex justify-between">
-				<PhotoSticker url={props.post.author.photoUrl}></PhotoSticker>
+				<PhotoSticker url={props.post.authorPhotoUrl}></PhotoSticker>
 			</div>
 		</div>
 	)

@@ -71,3 +71,12 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+input {
+  border: none;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
