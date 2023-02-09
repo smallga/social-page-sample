@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const getPoast = () =>
+export const getPost = () =>
 {
-    return axios.get('/');
+    return axios.get('/api/getPost');
 }

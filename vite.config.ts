@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { viteMockServe } from 'vite-plugin-mock'
+import svgr from "vite-plugin-svgr";
 
 const localEnabled = process.env.USE_MOCK === 'true';
 
@@ -18,6 +19,6 @@ export default defineConfig({
     localEnabled: localEnabled,
     logger: false, //是否在控制台顯示請求日誌
     supportTs: true,
-  }),
+  }),svgr(),
   ],
 })
