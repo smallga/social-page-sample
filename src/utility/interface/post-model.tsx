@@ -6,6 +6,8 @@ export interface PostModel {
     lastUpdated: string,
     title: string,
     replyCount: number,
+    likeCount: number,
     videoUrl: string,
     videoPreviewUrl: string,
+    isLike: boolean,
 }

@@ -80,3 +80,34 @@ input {
     outline: none;
   }
 }
+
+//icon
+
+svg.like {
+    stroke: #f91a1a;
+    path{
+      fill: #f91a1a !important;
+    }
+}
+
+//animation
+
+.pulse {
+  animation-name: pulse-in;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+}
+
+@keyframes pulse-in {
+  0% {
+    transform: scale(0.8, 0.8);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
