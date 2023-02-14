@@ -13,6 +13,263 @@ export default [
       }
     },
     {
+      url: "/api/getNotyfy",
+      method: "get",
+      response: () => {
+        return {
+          code: 200,
+          message: "ok",
+          data: [{
+            "notifyUser": "BR",
+            "message": "eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim",
+            "time": "11/14/2022"
+          }, {
+            "notifyUser": "US",
+            "message": "integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla",
+            "time": "9/17/2022"
+          }, {
+            "notifyUser": "US",
+            "message": "porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in",
+            "time": "11/17/2022"
+          }, {
+            "notifyUser": "HR",
+            "message": "massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et",
+            "time": "10/19/2022"
+          }, {
+            "notifyUser": "CN",
+            "message": "iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate",
+            "time": "10/6/2022"
+          }, {
+            "notifyUser": "ET",
+            "message": "pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis",
+            "time": "7/13/2022"
+          }, {
+            "notifyUser": "MG",
+            "message": "diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis",
+            "time": "2/19/2022"
+          }, {
+            "notifyUser": "BR",
+            "message": "faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla",
+            "time": "2/8/2023"
+          }, {
+            "notifyUser": "AR",
+            "message": "feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea",
+            "time": "3/30/2022"
+          }, {
+            "notifyUser": "PA",
+            "message": "ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
+            "time": "9/24/2022"
+          }, {
+            "notifyUser": "CK",
+            "message": "in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit",
+            "time": "6/26/2022"
+          }, {
+            "notifyUser": "CA",
+            "message": "parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id",
+            "time": "9/27/2022"
+          }, {
+            "notifyUser": "ID",
+            "message": "posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec",
+            "time": "7/15/2022"
+          }, {
+            "notifyUser": "US",
+            "message": "purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique",
+            "time": "10/18/2022"
+          }, {
+            "notifyUser": "US",
+            "message": "vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla",
+            "time": "12/24/2022"
+          }, {
+            "notifyUser": "US",
+            "message": "ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan",
+            "time": "9/18/2022"
+          }, {
+            "notifyUser": "CU",
+            "message": "ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus",
+            "time": "4/19/2022"
+          }, {
+            "notifyUser": "DK",
+            "message": "nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a",
+            "time": "10/26/2022"
+          }, {
+            "notifyUser": "TW",
+            "message": "dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit",
+            "time": "10/1/2022"
+          }, {
+            "notifyUser": "CU",
+            "message": "faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus",
+            "time": "5/9/2022"
+          }]
+        };
+      }
+    },
+    {
+      url: "/api/getMediaPosts",
+      method: "get",
+      response: () => {
+        return {
+          code: 200,
+          message: "ok",
+          data: [{
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 4,
+            "size": 2,
+            "title": "ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at",
+            "time": "8/1/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 1,
+            "size": 1,
+            "title": "lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque",
+            "time": "4/3/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/Sunset_Swinging04_MP4_HDV_1080p25__TanuriX_Stock_Footage_NS_small.jpg",
+            "videoUrl": 1,
+            "size": 2,
+            "title": "integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu",
+            "time": "7/15/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/thumbnails/160820_230_NYC_TimeSquare2_1080p_small.jpg",
+            "videoUrl": 2,
+            "size": 1,
+            "title": "maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta",
+            "time": "9/14/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/thumbnails/160820_230_NYC_TimeSquare2_1080p_small.jpg",
+            "videoUrl": 2,
+            "size": 1,
+            "title": "id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet",
+            "time": "7/15/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/thumbnails/523445671_small.jpg",
+            "videoUrl": 2,
+            "size": 2,
+            "title": "sapien non mi integer ac neque duis bibendum morbi non quam",
+            "time": "12/18/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/thumbnails/523445671_small.jpg",
+            "videoUrl": 5,
+            "size": 1,
+            "title": "suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce",
+            "time": "3/21/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 2,
+            "size": 1,
+            "title": "nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci",
+            "time": "9/10/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/thumbnails/160820_230_NYC_TimeSquare2_1080p_small.jpg",
+            "videoUrl": 2,
+            "size": 1,
+            "title": "mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin",
+            "time": "10/12/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 2,
+            "size": 1,
+            "title": "sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus",
+            "time": "7/27/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 3,
+            "size": 2,
+            "title": "magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
+            "time": "11/2/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 5,
+            "size": 1,
+            "title": "justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor",
+            "time": "4/17/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 4,
+            "size": 1,
+            "title": "duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque",
+            "time": "3/3/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/DL_small.jpg",
+            "videoUrl": 3,
+            "size": 2,
+            "title": "porta volutpat erat quisque erat eros viverra eget congue eget",
+            "time": "10/29/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/thumbnails/523445671_small.jpg",
+            "videoUrl": 5,
+            "size": 2,
+            "title": "lorem ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus",
+            "time": "2/26/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/DL_small.jpg",
+            "videoUrl": 1,
+            "size": 2,
+            "title": "posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue",
+            "time": "3/21/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/DL_small.jpg",
+            "videoUrl": 3,
+            "size": 2,
+            "title": "amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum",
+            "time": "3/18/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/thumbnails/523445671_small.jpg",
+            "videoUrl": 5,
+            "size": 1,
+            "title": "pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor",
+            "time": "12/28/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/thumbnails/160820_230_NYC_TimeSquare2_1080p_small.jpg",
+            "videoUrl": 2,
+            "size": 2,
+            "title": "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae",
+            "time": "8/5/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/Sunset_Swinging04_MP4_HDV_1080p25__TanuriX_Stock_Footage_NS_small.jpg",
+            "videoUrl": 3,
+            "size": 2,
+            "title": "pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet",
+            "time": "9/6/2022"
+          }]
+        };
+      }
+    },
+    {
+      url: "/api/getReply",
+      method: "get",
+      response: () => {
+        return {
+          code: 200,
+          message: "ok",
+          data: [{
+            "replyAcCountName": "Terence",
+            "replyAccountPhoto": "./src/assets/lisa.png",
+            "replyMessage": "primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla"
+          }, {
+            "replyAcCountName": "Wakefield",
+            "replyAccountPhoto": "./src/assets/lisa.png",
+            "replyMessage": "non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus"
+          }, {
+            "replyAcCountName": "Allistir",
+            "replyAccountPhoto": "./src/assets/lisa.png",
+            "replyMessage": "at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat"
+          }, {
+            "replyAcCountName": "Brandice",
+            "replyAccountPhoto": "./src/assets/lisa.png",
+            "replyMessage": "nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum"
+          }, {
+            "replyAcCountName": "Karlis",
+            "replyAccountPhoto": "./src/assets/lisa.png",
+            "replyMessage": "tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat"
+          }, {
+            "replyAcCountName": "Dorothea",
+            "replyAccountPhoto": "./src/assets/lisa.png",
+            "replyMessage": "iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt"
+          }]
+        };
+      }
+    },
+    {
       url: "/api/getPost",
       method: "get",
       response: () => {

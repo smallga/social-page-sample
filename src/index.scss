@@ -33,6 +33,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
@@ -90,6 +91,34 @@ svg.like {
     }
 }
 
+a {
+  transition: ease-in 0.5s;
+}
+
+.active {
+  .bell {
+    path {
+      fill: #000000 !important
+    }
+  }
+
+  .home {
+    path {
+      fill: #000000!important;
+      stroke: #000000 !important;
+      stroke-width: 2 !important;
+    }
+  }
+
+  .grid {
+    path {
+      fill: #000000!important;
+      stroke: #000000 !important;
+      stroke-width: 1 !important;
+    }
+  }
+}
+
 //animation
 
 .pulse {
@@ -110,4 +139,28 @@ svg.like {
   100% {
     transform: scale(1, 1);
   }
+}
+
+//masonry-grid
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: 0px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 0px; /* gutter size */
+  background-clip: padding-box;
+}
+
+
+//media-post
+.media-post-size-1 {
+  min-height: 147px;
+}
+
+.media-post-size-2 {
+  min-height: calc(294px + 0.5rem);
 }

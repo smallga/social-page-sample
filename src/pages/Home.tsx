@@ -15,14 +15,23 @@ export default function HomePage(props: HomePageProps) {
     })
   }, [])
 
+  const handleScroll = (e:any): void => {
+    e.stopPropagation() // Handy if you want to prevent event bubbling to scrollable parent
+    if(e.target.scrollHeight - e.target.scrollTop < e.target.clientHeight + 300) {
+      getPost().then(res => {
+        setPosts([...posts, ...res.data.data]);
+      })
+    }
+  };
+
 
   return (
-    <>
+    <div className="h-full overflow-y-auto" onScroll={handleScroll}>
       {
         posts.length > 0 && posts.map((post,index) => (
           <Post key={index} post={post}></Post>
         ))
       }
-    </>
+    </div>
   )
 }

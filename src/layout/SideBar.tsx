@@ -1,4 +1,7 @@
 import { NavLink } from "react-router-dom";
+import { ReactComponent as Home}  from '../assets/icon/home.svg'
+import { ReactComponent as Grid}  from '../assets/icon/grid.svg'
+import { ReactComponent as NewPost}  from '../assets/icon/circle-add.svg'
 import { ReactComponent as Bell}  from '../assets/icon/bell.svg'
 
 interface SideBarProps {
@@ -14,25 +17,25 @@ export default function SideBar(props: SideBarProps) {
   }
 
   return (
-    <div className="fixed bottom-0 left-0 w-full h-12 flex justify-around lg:pt-2 lg:justify-start lg:flex-col lg:w-36 lg:top-14 lg:h-[calc(100%_-_3.5rem)]">
+    <div className="fixed bottom-0 left-0 w-full h-12 flex justify-around lg:pt-2 lg:justify-start lg:flex-col lg:w-24 lg:top-14 lg:h-[calc(100%_-_3.5rem)] lg:border-r-2">
       <NavLink to={""}>
           <IconBtn>
-            <Bell className="w-8 h-8"/>
+            <Home className="w-8 h-8 home"/>
+          </IconBtn>
+      </NavLink>
+      <NavLink to={"/grid"}>
+          <IconBtn>
+            <Grid className="w-8 h-8 grid"/>
           </IconBtn>
       </NavLink>
       <NavLink to={""}>
           <IconBtn>
-            <Bell className="w-8 h-8"/>
+            <NewPost className="w-8 h-8"/>
           </IconBtn>
       </NavLink>
-      <NavLink to={""}>
+      <NavLink to={"/notify"}>
           <IconBtn>
-            <Bell className="w-8 h-8"/>
-          </IconBtn>
-      </NavLink>
-      <NavLink to={""}>
-          <IconBtn>
-            <Bell className="w-8 h-8"/>
+            <Bell className="w-8 h-8 bell"/>
           </IconBtn>
       </NavLink>
       <NavLink to={""}>

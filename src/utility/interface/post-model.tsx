@@ -1,4 +1,4 @@
-import { User } from "./user";
+import { UserModel } from "./user";
 
 export interface PostModel {
     authorName: string,
