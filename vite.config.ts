@@ -7,6 +7,7 @@ const localEnabled = process.env.USE_MOCK === 'true';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base:'social-page-sample/dist',
   plugins: [react({
     include: "**/*.tsx",
   }),
