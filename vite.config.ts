@@ -17,6 +17,7 @@ export default defineConfig({
     import { setupProdMockServer } from './mockProdServer';
     setupProdMockServer();
   `,
+    prodEnabled: true,
     localEnabled: localEnabled,
     logger: false, //是否在控制台顯示請求日誌
     supportTs: true,
