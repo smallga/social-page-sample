@@ -161,6 +161,137 @@ export default [
       }
     },
     {
+      url: "/api/getUserMediaPosts",
+      method: "get",
+      response: () => {
+        return {
+          code: 200,
+          message: "ok",
+          data: [{
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 4,
+            "size": 1,
+            "title": "ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at",
+            "time": "8/1/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 1,
+            "size": 1,
+            "title": "lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque",
+            "time": "4/3/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/Sunset_Swinging04_MP4_HDV_1080p25__TanuriX_Stock_Footage_NS_small.jpg",
+            "videoUrl": 1,
+            "size": 1,
+            "title": "integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu",
+            "time": "7/15/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/thumbnails/160820_230_NYC_TimeSquare2_1080p_small.jpg",
+            "videoUrl": 2,
+            "size": 1,
+            "title": "maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta",
+            "time": "9/14/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/thumbnails/160820_230_NYC_TimeSquare2_1080p_small.jpg",
+            "videoUrl": 2,
+            "size": 1,
+            "title": "id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet",
+            "time": "7/15/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/thumbnails/523445671_small.jpg",
+            "videoUrl": 2,
+            "size": 1,
+            "title": "sapien non mi integer ac neque duis bibendum morbi non quam",
+            "time": "12/18/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/thumbnails/523445671_small.jpg",
+            "videoUrl": 5,
+            "size": 1,
+            "title": "suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce",
+            "time": "3/21/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 2,
+            "size": 1,
+            "title": "nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci",
+            "time": "9/10/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/thumbnails/160820_230_NYC_TimeSquare2_1080p_small.jpg",
+            "videoUrl": 2,
+            "size": 1,
+            "title": "mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin",
+            "time": "10/12/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 2,
+            "size": 1,
+            "title": "sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus",
+            "time": "7/27/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 3,
+            "size": 1,
+            "title": "magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
+            "time": "11/2/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 5,
+            "size": 1,
+            "title": "justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor",
+            "time": "4/17/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg",
+            "videoUrl": 4,
+            "size": 1,
+            "title": "duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque",
+            "time": "3/3/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/DL_small.jpg",
+            "videoUrl": 3,
+            "size": 1,
+            "title": "porta volutpat erat quisque erat eros viverra eget congue eget",
+            "time": "10/29/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/thumbnails/523445671_small.jpg",
+            "videoUrl": 5,
+            "size": 1,
+            "title": "lorem ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus",
+            "time": "2/26/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/DL_small.jpg",
+            "videoUrl": 1,
+            "size": 1,
+            "title": "posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue",
+            "time": "3/21/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/DL_small.jpg",
+            "videoUrl": 3,
+            "size": 1,
+            "title": "amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum",
+            "time": "3/18/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/thumbnails/523445671_small.jpg",
+            "videoUrl": 5,
+            "size": 1,
+            "title": "pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor",
+            "time": "12/28/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/thumbnails/160820_230_NYC_TimeSquare2_1080p_small.jpg",
+            "videoUrl": 2,
+            "size": 1,
+            "title": "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae",
+            "time": "8/5/2022"
+          }, {
+            "imageUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/Sunset_Swinging04_MP4_HDV_1080p25__TanuriX_Stock_Footage_NS_small.jpg",
+            "videoUrl": 3,
+            "size": 1,
+            "title": "pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet",
+            "time": "9/6/2022"
+          }]
+        };
+      }
+    },
+    {
       url: "/api/getMediaPosts",
       method: "get",
       response: () => {

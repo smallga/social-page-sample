@@ -20,8 +20,9 @@ function App() {
       <div id="content" className='max-w-2xl w-full h-full overflow-y-hidden'>
         <Routes>
           <Route path='/' element={<Home />}/>
-            <Route path='grid' element={<GridPage />} />
+            <Route path='/grid' element={<GridPage />} />
             <Route path='/notify' element={<NotifyPage />} />
+            <Route path='/user' element={<UserPage />} />
             <Route path='/user/:id' element={<UserPage />} />
         </Routes>
       </div>

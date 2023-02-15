@@ -41,7 +41,7 @@ export default function SideBar(props: SideBarProps) {
       </NavLink>
       <NavLink to={"/user"}>
         <IconBtn>
-          <PhotoSticker url="./src/assets/lisa.png" />
+          <PhotoSticker url="./src/assets/mike.png" />
         </IconBtn>
       </NavLink>
     </div>

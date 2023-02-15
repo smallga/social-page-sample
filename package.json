@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "cross-env USE_MOCK='true' tsc && vite build",
     "dev-mock": "cross-env USE_MOCK='true' vite",
     "preview": "vite preview"
   },
   "dependencies": {
+    "autolinker": "^4.0.0",
     "axios": "^1.3.2",
     "cross-env": "^7.0.3",
     "react": "^18.2.0",
