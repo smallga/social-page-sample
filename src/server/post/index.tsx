@@ -8,3 +8,7 @@ export const getPost = () =>
 export const getMediaPosts = () => {
     return axios.get('/api/getMediaPosts');
 }
+
+export const getNotify = () => {
+    return axios.get('/api/getNotify');
+}

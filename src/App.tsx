@@ -8,6 +8,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import UserPage from './pages/User'
 import GridPage from './pages/Grid'
+import NotifyPage from './pages/Notify'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}/>
             <Route path='grid' element={<GridPage />} />
+            <Route path='/notify' element={<NotifyPage />} />
             <Route path='/user/:id' element={<UserPage />} />
         </Routes>
       </div>
