@@ -13,15 +13,15 @@ interface UserPageProps {
 const breakpointColumnsObj = {
   default: 3,
   1024: 3,
-  768: 2,
-  500: 1
+  768: 3,
+  500: 2
 };
 
 export default function UserPage(props: UserPageProps) {
 
   const [user, setUser] = useState<UserDataModel>({
     name: 'Mike',
-    photoUrl: './src/assets/mike.png',
+    photoUrl: './/images/mike.png',
     description: '哈囉我是Brian, 以下是我的連結網址:\nGit:https://github.com/smallga',
     posts: 43,
     followers: 543,
@@ -48,10 +48,10 @@ export default function UserPage(props: UserPageProps) {
   }, []);
 
   return (
-    <div className="w-full h-full overflow-y-auto">
+    <div className="w-full h-full overflow-y-auto p-4">
       <div className="flex p-6">
         <div className="w-32 flex justify-center">
-          <PhotoSticker url='./src/assets/mike.png' size={PhotoSizeEnum.LG} />
+          <PhotoSticker url='.//images/mike.png' size={PhotoSizeEnum.LG} />
         </div>
         <div className="max-w-[300px] mx-auto flex flex-1 items-center justify-evenly">
           <div className="mx-2">

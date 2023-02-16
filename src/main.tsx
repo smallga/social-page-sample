@@ -8,7 +8,7 @@ setupProdMockServer();
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='social-page-sample/dist'>
       <App />
     </BrowserRouter>
   </React.StrictMode>,

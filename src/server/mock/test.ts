@@ -22,91 +22,91 @@ export default [
           data: [{
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim",
             "time": "11/14/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla",
             "time": "9/17/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in",
             "time": "11/17/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et",
             "time": "10/19/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate",
             "time": "10/6/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis",
             "time": "7/13/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis",
             "time": "2/19/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla",
             "time": "2/8/2023"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea",
             "time": "3/30/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
             "time": "9/24/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit",
             "time": "6/26/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id",
             "time": "9/27/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec",
             "time": "7/15/2022"
@@ -117,42 +117,42 @@ export default [
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla",
             "time": "12/24/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan",
             "time": "9/18/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus",
             "time": "4/19/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a",
             "time": "10/26/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit",
             "time": "10/1/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": "./src/assets/lisa.png",
+              "photoUrl": ".//images/lisa.png",
             },
             "message": "faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus",
             "time": "5/9/2022"
@@ -431,27 +431,27 @@ export default [
           message: "ok",
           data: [{
             "replyAcCountName": "Terence",
-            "replyAccountPhoto": "./src/assets/lisa.png",
+            "replyAccountPhoto": ".//images/lisa.png",
             "replyMessage": "primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla"
           }, {
             "replyAcCountName": "Wakefield",
-            "replyAccountPhoto": "./src/assets/lisa.png",
+            "replyAccountPhoto": ".//images/lisa.png",
             "replyMessage": "non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus"
           }, {
             "replyAcCountName": "Allistir",
-            "replyAccountPhoto": "./src/assets/lisa.png",
+            "replyAccountPhoto": ".//images/lisa.png",
             "replyMessage": "at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat"
           }, {
             "replyAcCountName": "Brandice",
-            "replyAccountPhoto": "./src/assets/lisa.png",
+            "replyAccountPhoto": ".//images/lisa.png",
             "replyMessage": "nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum"
           }, {
             "replyAcCountName": "Karlis",
-            "replyAccountPhoto": "./src/assets/lisa.png",
+            "replyAccountPhoto": ".//images/lisa.png",
             "replyMessage": "tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat"
           }, {
             "replyAcCountName": "Dorothea",
-            "replyAccountPhoto": "./src/assets/lisa.png",
+            "replyAccountPhoto": ".//images/lisa.png",
             "replyMessage": "iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt"
           }]
         };
