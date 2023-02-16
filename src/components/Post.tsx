@@ -101,7 +101,8 @@ export default function Post(props: PostProps) {
 			<div className="px-4">
 				<div ref={postContentRef} className="my-2 relative">
 					<LazyLoadImage threshold={3000} alt="..." className=" w-full min-h-[300px] object-contain" src={props.post.videoPreviewUrl}></LazyLoadImage>
-					<video ref={videoRef} loop muted playsInline preload="true" className="absolute z-40 top-0 left-0 w-full min-h-[300px] object-contain" src={isShow ? props.post.videoUrl : ''}></video>
+					{/* <video ref={videoRef} loop muted playsInline preload="true" className="absolute z-40 top-0 left-0 w-full min-h-[300px] object-contain" src={isShow ? props.post.videoUrl : ''}></video> */}
+					<video ref={videoRef} loop muted playsInline preload="true" className="absolute z-40 top-0 left-0 w-full min-h-[300px] object-contain" src={props.post.videoUrl}></video>
 				</div>
 				<div className="flex justify-start items-center">
 					<div className={`flex justify-start items-center`}>
