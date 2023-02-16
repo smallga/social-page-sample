@@ -18,7 +18,7 @@ export default function SideBar(props: SideBarProps) {
   }
 
   return (
-    <div className="fixed bottom-0 left-0 w-full h-12 flex justify-around lg:pt-2 lg:justify-start lg:flex-col lg:w-24 lg:top-14 lg:h-[calc(100%_-_3.5rem)] lg:border-r-2 ">
+    <div className="fixed bg-white z-50 bottom-0 left-0 w-full h-12 flex justify-around lg:pt-2 lg:justify-start lg:flex-col lg:w-24 lg:top-14 lg:h-[calc(100%_-_3.5rem)] lg:border-r-2 ">
       <NavLink to={""}>
         <IconBtn>
           <Home className="w-8 h-8 home" />

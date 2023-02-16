@@ -17,7 +17,7 @@ function App() {
     <div className='pb-14 pt-2 h-full w-full flex justify-center lg:pb-2 lg:pt-14'>
       <Header></Header>
       <SideBar></SideBar>
-      <div id="content" className='max-w-2xl w-full h-full overflow-y-hidden'>
+      <div id="content" className='z-0 max-w-2xl w-full h-full overflow-y-hidden'>
         <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/grid' element={<GridPage />} />
