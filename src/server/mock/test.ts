@@ -471,7 +471,7 @@ export default [
             "title": "tristique est et tempus semper est quam pharetra magna ac consequat metus sapien",
             "replyCount": 30,
             "likeCount": 989,
-            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/small_watermarked/523445671_preview.webm",
+            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/small_watermarked/523445671_preview.mp4",
             "videoPreviewUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/thumbnails/523445671_small.jpg"
           }, {
             "authorName": "Jennica",
@@ -480,7 +480,7 @@ export default [
             "title": "in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non",
             "replyCount": 23,
             "likeCount": 1098,
-            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/small_watermarked/180607_A_101_preview.webm",
+            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/small_watermarked/180607_A_101_preview.mp4",
             "videoPreviewUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg"
           }, {
             "authorName": "Kate",
@@ -489,7 +489,7 @@ export default [
             "title": "porttitor lorem id ligula suspendisse ornare consequat lectus in est",
             "replyCount": 10,
             "likeCount": 1099,
-            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/small_watermarked/160820_230_NYC_TimeSquare2_1080p_preview.webm",
+            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/small_watermarked/160820_230_NYC_TimeSquare2_1080p_preview.mp4",
             "videoPreviewUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/thumbnails/160820_230_NYC_TimeSquare2_1080p_small.jpg"
           }, {
             "authorName": "Tabbatha",
@@ -498,7 +498,7 @@ export default [
             "title": "sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum",
             "replyCount": 12,
             "likeCount": 1099,
-            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/small_watermarked/Sunset_Swinging04_MP4_HDV_1080p25__TanuriX_Stock_Footage_NS_preview.webm",
+            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/small_watermarked/Sunset_Swinging04_MP4_HDV_1080p25__TanuriX_Stock_Footage_NS_preview.mp4",
             "videoPreviewUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/Sunset_Swinging04_MP4_HDV_1080p25__TanuriX_Stock_Footage_NS_small.jpg"
           }, {
             "authorName": "Clemmy",
@@ -507,7 +507,7 @@ export default [
             "title": "duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit",
             "replyCount": 14,
             "likeCount": 1099000,
-            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/small_watermarked/DL_preview.webm",
+            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/small_watermarked/DL_preview.mp4",
             "videoPreviewUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/DL_small.jpg"
           }, {
             "authorName": "Otto",
@@ -516,7 +516,7 @@ export default [
             "title": "at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam",
             "replyCount": 8,
             "likeCount": 1099000,
-            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/small_watermarked/523445671_preview.webm",
+            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/small_watermarked/523445671_preview.mp4",
             "videoPreviewUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-05/thumbnails/523445671_small.jpg"
           }, {
             "authorName": "Fons",
@@ -525,7 +525,7 @@ export default [
             "title": "lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra",
             "replyCount": 39,
             "likeCount": 1099000,
-            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/small_watermarked/180607_A_101_preview.webm",
+            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/small_watermarked/180607_A_101_preview.mp4",
             "videoPreviewUrl": "https://joy1.videvo.net/videvo_files/video/free/2018-07/thumbnails/180607_A_101_small.jpg"
           }, {
             "authorName": "Nara",
@@ -534,7 +534,7 @@ export default [
             "title": "consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis",
             "replyCount": 57,
             "likeCount": 1099000,
-            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/small_watermarked/160820_230_NYC_TimeSquare2_1080p_preview.webm",
+            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/small_watermarked/160820_230_NYC_TimeSquare2_1080p_preview.mp4",
             "videoPreviewUrl": "https://joy1.videvo.net/videvo_files/video/free/2016-09/thumbnails/160820_230_NYC_TimeSquare2_1080p_small.jpg"
           }, {
             "authorName": "Andre",
@@ -543,7 +543,7 @@ export default [
             "title": "sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean",
             "replyCount": 97,
             "likeCount": 1099000,
-            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/small_watermarked/Sunset_Swinging04_MP4_HDV_1080p25__TanuriX_Stock_Footage_NS_preview.webm",
+            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/small_watermarked/Sunset_Swinging04_MP4_HDV_1080p25__TanuriX_Stock_Footage_NS_preview.mp4",
             "videoPreviewUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/Sunset_Swinging04_MP4_HDV_1080p25__TanuriX_Stock_Footage_NS_small.jpg"
           }, {
             "authorName": "Porty",
@@ -552,7 +552,7 @@ export default [
             "title": "morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique",
             "replyCount": 78,
             "likeCount": 1099000,
-            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/small_watermarked/DL_preview.webm",
+            "videoUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/small_watermarked/DL_preview.mp4",
             "videoPreviewUrl": "https://joy1.videvo.net/videvo_files/video/free/2015-08/thumbnails/DL_small.jpg"
           }]
           

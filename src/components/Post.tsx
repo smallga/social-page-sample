@@ -103,7 +103,7 @@ export default function Post(props: PostProps) {
 					{/* <LazyLoadImage threshold={3000} alt="..." className=" w-full min-h-[300px] object-contain" src={props.post.videoPreviewUrl}></LazyLoadImage> */}
 					{/* <video ref={videoRef} loop muted playsInline preload="true" className="absolute z-40 top-0 left-0 w-full min-h-[300px] object-contain" src={isShow ? props.post.videoUrl : ''}></video> */}
 					<video ref={videoRef} loop muted playsInline preload="true" className="absolute z-40 top-0 left-0 w-full min-h-[300px] object-contain">
-						<source src={props.post.videoUrl} type="video/webm"/>
+						<source src={props.post.videoUrl} type="video/mp4"/>
 					</video>
 				</div>
 				<div className="flex justify-start items-center">
