@@ -25,19 +25,29 @@ export default function Post(props: PostProps) {
 	const [likeCount, setLikeCount] = useState<number>(props.post.likeCount);
 	const [replyMessages, setReplyMessages] = useState<Array<ReplyModel>>([]);
 	const [isComposing, setIsComposing] = useState<boolean>(false);
+	const [isShow, setIsShow] = useState<boolean>(false);
 
 	const isVisible = useElementOnScreen(option, postContentRef);
 
 	useEffect(() => {
 		if (videoRef.current) {
-			if (isVisible) {
-				videoRef.current.play();
-			}
-			else {
+			if (!isVisible && isShow) {
 				videoRef.current.pause();
 			}
+			else if(isVisible && isShow) {
+				videoRef.current.play();
+      }
+			else if(isVisible && !isShow) {
+				setIsShow(true);
+      }
 		}
 	}, [isVisible])
+
+	useEffect(() => {
+		if (videoRef.current) {
+			videoRef.current.play();
+		}
+	}, [isShow])
 
 	const ShowCount = useCallback((count: number) => {
 		let result = '';
@@ -89,9 +99,9 @@ export default function Post(props: PostProps) {
 				<span className="ml-2">{props.post.authorName}</span>
 			</div>
 			<div className="px-4">
-				<div ref={postContentRef} className="py-2 relative">
-					{!isVisible && <LazyLoadImage threshold={3000} alt="..." className=" w-full min-h-[300px] object-contain" src={props.post.videoPreviewUrl}></LazyLoadImage>}
-					<video ref={videoRef} loop muted preload="true" className="w-full min-h-[300px] object-contain" src={isVisible ? props.post.videoUrl : ''}></video>
+				<div ref={postContentRef} className="my-2 relative">
+					<LazyLoadImage threshold={3000} alt="..." className=" w-full min-h-[300px] object-contain" src={props.post.videoPreviewUrl}></LazyLoadImage>
+					<video ref={videoRef} loop muted preload="true" className="absolute z-40 top-0 left-0 w-full min-h-[300px] object-contain" src={isShow ? props.post.videoUrl : ''}></video>
 				</div>
 				<div className="flex justify-start items-center">
 					<div className={`flex justify-start items-center`}>
