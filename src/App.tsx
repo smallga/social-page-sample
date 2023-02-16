@@ -19,7 +19,7 @@ function App() {
       <SideBar></SideBar>
       <div id="content" className='max-w-2xl w-full h-full overflow-y-hidden'>
         <Routes>
-          <Route path='/' element={<Home />}/>
+            <Route path='/' element={<Home />}/>
             <Route path='/grid' element={<GridPage />} />
             <Route path='/notify' element={<NotifyPage />} />
             <Route path='/user' element={<UserPage />} />
