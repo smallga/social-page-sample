@@ -7,6 +7,7 @@ export interface PostModel {
     title: string,
     replyCount: number,
     likeCount: number,
+    webmVideoUrl: string,
     videoUrl: string,
     videoPreviewUrl: string,
     isLike: boolean,
