@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { nowDateDiffSec } from "../utility/common/dateCalculate";
 import { NotifyModel } from "../utility/interface/notify-model"
 import PhotoSticker from "./PhotoSticker";
@@ -5,9 +6,10 @@ import PhotoSticker from "./PhotoSticker";
 interface NotifyContentProps {
   notify: NotifyModel;
 }
-export default function NotifyContent(props: NotifyContentProps) {
+export default function NotifyContent(this: any, props: NotifyContentProps) {
 
   const { notify } = props;
+  const navigate = useNavigate();
 
   const showDate = () => {
     const { time } = notify;
@@ -39,9 +41,13 @@ export default function NotifyContent(props: NotifyContentProps) {
     return dateStr;
   }
   
+  const goPost = (id: string) => {
+    navigate('/notify/p/'+id);
+  }
+  
 
   return (
-    <div className="flex w-full border-b border-slate-100 cursor-pointer hover:bg-slate-50 py-1">
+    <div className="flex w-full border-b border-slate-100 cursor-pointer hover:bg-slate-50 py-1" onClick={goPost.bind(this, '123')}>
       <PhotoSticker url={notify.notifyUser.photoUrl}></PhotoSticker>
       <div className="ml-2 flex-1 text-left">
         <div className="text-slate-500 font-bold">

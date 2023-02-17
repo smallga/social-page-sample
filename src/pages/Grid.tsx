@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import Masonry from 'react-masonry-css'
+import { Route, Routes, useNavigate } from 'react-router-dom';
+import PostModal from '../components/PostModal';
 import { getMediaPosts } from '../server/post';
 import { MediaPostModel } from '../utility/interface/media-post-model';
 
@@ -17,6 +19,7 @@ const breakpointColumnsObj = {
 export default function GridPage(props: GridPageProps) {
 
   const [mediaPosts, setMediaPosts] = useState<MediaPostModel[]>([]);
+  const navigate = useNavigate();
 
   const getMediaPostsFromApi = () => {
     getMediaPosts().then(
@@ -37,6 +40,10 @@ export default function GridPage(props: GridPageProps) {
     }
   };
 
+  const goPost = (id: string):void => {
+    navigate('/grid/'+ id);
+  }
+
   return (
     <div className='overflow-y-auto h-full p-4' onScroll={handleScroll}>
         <Masonry
@@ -46,13 +53,16 @@ export default function GridPage(props: GridPageProps) {
           {
             mediaPosts.length > 0 && mediaPosts.map((post,index) => {
               return (
-                <div className='p-1'>
+                <div key={index} className='p-1 cursor-pointer' onClick={() => {goPost('123')}}>
                   <img key={index} className={`w-full rounded-md object-cover media-post-size-${post.size}`} src={post.imageUrl}/>
                 </div>
               )
             })
           }
         </Masonry>
+        <Routes>
+              <Route path='/:id' element={<PostModal />} />
+          </Routes>
       </div>
   )
 }

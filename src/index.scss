@@ -160,8 +160,10 @@ a {
 //media-post
 .media-post-size-1 {
   min-height: 147px;
+  max-height: 147px;
 }
 
 .media-post-size-2 {
   min-height: calc(294px + 0.5rem);
+  max-height: calc(294px + 0.5rem);
 }
