@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import Post from "../components/Post";
+import PostModal from "../components/PostModal";
 import { getPost } from "../server/post";
 import { PostModel } from "../utility/interface/post-model";
 
@@ -26,6 +28,7 @@ export default function HomePage(props: HomePageProps) {
 
 
   return (
+    <>
     <div className="h-full overflow-y-auto" onScroll={handleScroll}>
       {
         posts.length > 0 && posts.map((post,index) => (
@@ -33,5 +36,9 @@ export default function HomePage(props: HomePageProps) {
         ))
       }
     </div>
+      <Routes>
+        <Route path='/p/:id' element={<PostModal />} />
+      </Routes>
+    </>
   )
 }

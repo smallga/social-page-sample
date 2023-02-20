@@ -50,9 +50,9 @@ export default function PostModal(props: PostModalProps) {
 
 
   return (
-    <div aria-label="modal-background" className="fixed top-0 left-0 w-full h-full py-14 z-50 bg-opacity-40 bg-slate-800" onClick={closeModal}>
+    <div aria-label="modal-background" className="fixed top-0 left-0 w-full h-full z-50 bg-opacity-40 bg-slate-800 md:py-8" onClick={closeModal}>
       <div aria-label="post-modal-content" className="mx-auto h-full animate-pulseIn">
-        <div aria-label="post-modal-content" className="bg-white pb-2 w-[80%] h-[calc(100%-3rem)] overflow-y-auto mx-auto rounded-t-md" onClick={(e) => { e.stopPropagation() }}>
+        <div aria-label="post-modal-content" className="max-w-[568px] w-full h-[calc(100%-3rem)] bg-white pb-2 overflow-y-auto mx-auto rounded-t-md sm:h-[calc(100%-3rem)]" onClick={(e) => { e.stopPropagation() }}>
           <Post post={post} inModal={true}></Post>
           <div className="px-8">
             {
@@ -68,7 +68,7 @@ export default function PostModal(props: PostModalProps) {
             }
           </div>
         </div>
-        <div className="h-12 flex items-center px-3 bg-white w-[80%] mx-auto rounded-b-md border-t border-slate-200" onClick={(e) => { e.stopPropagation() }}>
+        <div className="max-w-[568px] h-12 flex items-center px-3 bg-white  mx-auto rounded-b-md border-t border-slate-200" onClick={(e) => { e.stopPropagation() }}>
           <PhotoSticker url={'/images/mike.png'} />
           <input className="ml-2 w-full" placeholder="新增留言..."
             onKeyUp={replyKeyupChange}

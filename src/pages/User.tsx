@@ -1,8 +1,10 @@
 import Autolinker from "autolinker";
 import { useCallback, useContext, useEffect, useState } from "react";
 import Masonry from "react-masonry-css";
+import { useParams } from "react-router-dom";
 import PhotoSticker from "../components/PhotoSticker";
 import { getMediaPosts, getUserMediaPosts } from "../server/post";
+import { searchUser } from "../server/user";
 import { PhotoSizeEnum } from "../utility/enum/photo-size.enum";
 import { MediaPostModel } from "../utility/interface/media-post-model";
 import { UserDataModel } from "../utility/interface/user-data";
@@ -19,9 +21,11 @@ const breakpointColumnsObj = {
 
 export default function UserPage(props: UserPageProps) {
 
+  const {userName} = useParams();
+
   const [user, setUser] = useState<UserDataModel>({
     name: 'Mike',
-    photoUrl: './/images/mike.png',
+    photoUrl: '/images/mike.png',
     description: '哈囉我是Brian, 以下是我的連結網址:\nGit:https://github.com/smallga',
     posts: 43,
     followers: 543,
@@ -47,11 +51,28 @@ export default function UserPage(props: UserPageProps) {
     getMediaPostsFromApi();
   }, []);
 
+  useEffect(() => {
+    if(userName) {
+      searchUser(userName).then(
+        res => {
+          setUser({
+            name: res.data.data.name,
+            photoUrl: res.data.data.photoUrl,
+            description: '哈囉我是Brian, 以下是我的連結網址:\nGit:https://github.com/smallga',
+            posts: 43,
+            followers: 543,
+            tracking: 88,
+          });
+        }
+      )
+    }
+  }, [userName])
+
   return (
     <div className="w-full h-full overflow-y-auto p-4">
       <div className="flex p-6">
         <div className="w-32 flex justify-center">
-          <PhotoSticker url='.//images/mike.png' size={PhotoSizeEnum.LG} />
+          <PhotoSticker url='/images/mike.png' size={PhotoSizeEnum.LG} />
         </div>
         <div className="max-w-[300px] mx-auto flex flex-1 items-center justify-evenly">
           <div className="mx-2">

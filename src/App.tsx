@@ -20,10 +20,11 @@ function App() {
       <SideBar></SideBar>
       <div id="content" className='pb-14 pt-2 max-w-2xl w-full h-full overflow-y-hidden lg:pt-14 lg:pb-2'>
         <Routes>
-            <Route path='/' element={<Home />}/>
+            <Route path='/*' element={<Home />}/>
             <Route path='/grid/*' element={<GridPage />} />
             <Route path='/notify/*' element={<NotifyPage />} />
             <Route path='/user' element={<UserPage />} />
+            <Route path='/user/:userName' element={<UserPage />} />
         </Routes>
       </div>
     </div>

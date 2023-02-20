@@ -7,6 +7,7 @@ import useElementOnScreen from "../hook/useElementOnScreen";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ReplyModel } from "../utility/interface/reply-model";
 import Reply from "./Reply";
+import { useNavigate } from "react-router-dom";
 
 interface PostProps {
 	post: PostModel;
@@ -22,6 +23,7 @@ export default function Post(props: PostProps) {
 
 	const videoRef = useRef<HTMLVideoElement>(null);
 	const postContentRef = useRef<HTMLDivElement>(null);
+	const navigate = useNavigate();
 	const [isLike, setIsLike] = useState<Boolean>(props.post.isLike);
 	const [likeCount, setLikeCount] = useState<number>(props.post.likeCount);
 	const [replyMessages, setReplyMessages] = useState<Array<ReplyModel>>([]);
@@ -76,9 +78,9 @@ export default function Post(props: PostProps) {
 		setIsLike(!isLike);
 	}
 
-	const hitReply = () => {
-
-	}
+	const goPost = () => {
+    navigate('/p/'+'123');
+  }
 
 	const replyKeyupChange = (e: any) => {
 		if ((e.key === 'Enter' || e.keyCode === 13) && !isComposing && e.target.value.length > 0) {
@@ -103,7 +105,7 @@ export default function Post(props: PostProps) {
 				<div ref={postContentRef} className="my-2 min-h-[300px] relative">
 					<LazyLoadImage threshold={3000} alt="..." className=" w-full min-h-[300px] object-contain" src={props.post.videoPreviewUrl}></LazyLoadImage>
 					{/* <video ref={videoRef} loop muted playsInline preload="true" className="absolute z-40 top-0 left-0 w-full min-h-[300px] object-contain" src={isShow ? props.post.videoUrl : ''}></video> */}
-					<video ref={videoRef} loop muted playsInline preload="true" className="absolute z-40 top-0 left-0 w-full min-h-[300px] object-contain bg-transparent">
+					<video ref={videoRef} loop muted playsInline preload="true" className="absolute z-10 top-0 left-0 w-full min-h-[300px] object-contain bg-transparent">
 						<source src={props.post.webmVideoUrl} type="video/webm" />
 						<source src={props.post.videoUrl} type="video/mp4" />
 					</video>
@@ -113,7 +115,7 @@ export default function Post(props: PostProps) {
 						<Heart className={`w-6 h-6 cursor-pointer ${isLike ? 'like pulse' : ''}`} onClick={hitLike} />
 						<span className=" w-12 mx-1 text-left">{ShowHeart()}</span>
 					</div>
-					<div className="flex justify-start items-center" onClick={hitReply}>
+					<div className="flex justify-start items-center" onClick={goPost}>
 						<Message className="w-6 h-6 cursor-pointer ml-1" />
 						<span className=" w-12 mx-1 text-left">{ShowReply()}</span>
 					</div>
@@ -123,7 +125,7 @@ export default function Post(props: PostProps) {
 				</div>
 				{
 					!props.inModal && <>
-						<div className="text-slate-600 text-sm text-left cursor-pointer font-bold underline py-1 hover:text-slate-500">
+						<div className="text-slate-600 text-sm text-left cursor-pointer font-bold underline py-1 hover:text-slate-500" onClick={goPost}>
 							{`查看全部${props.post.replyCount}則回覆`}
 						</div>
 						<div className={`flex items-center py-2`}>
