@@ -1,5 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  screens: {
+    'sm': '576px',
+    // => @media (min-width: 576px) { ... }
+  },
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
