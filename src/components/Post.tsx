@@ -86,7 +86,7 @@ export default function Post(props: PostProps) {
 		if ((e.key === 'Enter' || e.keyCode === 13) && !isComposing && e.target.value.length > 0) {
 			let newReply: ReplyModel = {
 				replyAccountName: 'mike',
-				replyAccountPhoto: '/images/mike.png',
+				replyAccountPhoto: './images/mike.png',
 				replyMessage: e.target.value,
 				replyDate: '剛剛',
 			}
@@ -129,7 +129,7 @@ export default function Post(props: PostProps) {
 							{`查看全部${props.post.replyCount}則回覆`}
 						</div>
 						<div className={`flex items-center py-2`}>
-							<PhotoSticker url={'/images/mike.png'} />
+							<PhotoSticker url={'./images/mike.png'} />
 							<input className="ml-2 w-full" placeholder="新增留言..."
 								onKeyUp={replyKeyupChange}
 								onCompositionStart={e => setIsComposing(true)}

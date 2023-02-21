@@ -16,12 +16,12 @@ export default [
       url: "/api/searchUser",
       method: "get",
       response: ({body, query}: any) => {
-        let data = [{name:'lisa', photoUrl: '/images/lisa.png'}
-        ,{name:'Amy', photoUrl: '/images/amy.png'}
-        ,{name:'Cindy', photoUrl: '/images/cindy.png'}
-        ,{name:'Duke', photoUrl: '/images/duke.png'}
-        ,{name:'Joan', photoUrl: '/images/joan.png'}
-        ,{name:'mike', photoUrl: '/images/mike.png'}];
+        let data = [{name:'lisa', photoUrl: './images/lisa.png'}
+        ,{name:'Amy', photoUrl: './images/amy.png'}
+        ,{name:'Cindy', photoUrl: './images/cindy.png'}
+        ,{name:'Duke', photoUrl: './images/duke.png'}
+        ,{name:'Joan', photoUrl: './images/joan.png'}
+        ,{name:'mike', photoUrl: './images/mike.png'}];
         if(query.searchQuery.length > 0) {
           data = data.filter(item => item.name.toLocaleLowerCase().indexOf(query.searchQuery.toLocaleLowerCase()) > -1);
         }

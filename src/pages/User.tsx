@@ -25,7 +25,7 @@ export default function UserPage(props: UserPageProps) {
 
   const [user, setUser] = useState<UserDataModel>({
     name: 'Mike',
-    photoUrl: '/images/mike.png',
+    photoUrl: './images/mike.png',
     description: '哈囉我是Brian, 以下是我的連結網址:\nGit:https://github.com/smallga',
     posts: 43,
     followers: 543,
@@ -72,7 +72,7 @@ export default function UserPage(props: UserPageProps) {
     <div className="w-full p-4">
       <div className="flex p-6">
         <div className="w-32 flex justify-center">
-          <PhotoSticker url='/images/mike.png' size={PhotoSizeEnum.LG} />
+          <PhotoSticker url='./images/mike.png' size={PhotoSizeEnum.LG} />
         </div>
         <div className="max-w-[300px] mx-auto flex flex-1 items-center justify-evenly">
           <div className="mx-2">

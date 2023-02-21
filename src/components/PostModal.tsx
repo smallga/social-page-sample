@@ -39,7 +39,7 @@ export default function PostModal(props: PostModalProps) {
 		if ((e.key === 'Enter' || e.keyCode === 13) && !isComposing && e.target.value.length > 0) {
 			let newReply:ReplyModel = {
 				replyAccountName: 'mike',
-				replyAccountPhoto: '/images/mike.png',
+				replyAccountPhoto: './images/mike.png',
 				replyMessage: e.target.value,
 				replyDate: '剛剛',
 			}
@@ -75,7 +75,7 @@ export default function PostModal(props: PostModalProps) {
           </div>
         </div>
         <div className="max-w-[568px] h-12 flex items-center px-3 bg-white  mx-auto border-t border-slate-200 sm:rounded-b-md" onClick={(e) => { e.stopPropagation() }}>
-          <PhotoSticker url={'/images/mike.png'} />
+          <PhotoSticker url={'./images/mike.png'} />
           <input className="ml-2 w-full" placeholder="新增留言..."
             onKeyUp={replyKeyupChange}
             onCompositionStart={e => setIsComposing(true)}
