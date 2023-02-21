@@ -57,7 +57,7 @@ export default function SerachBarSerachBarSerachBar(props: HeaderProps) {
   }, [])
 
   return (
-    <div className="fixed left-0 top-0 h-14 bg-white w-full z-40 hidden overflow-visible lg:block" >
+    <div className="fixed left-0 top-0 h-14 bg-white w-full z-30 hidden overflow-visible lg:block lg:left-24 lg:w-[calc(100%_-_6rem)]" >
       <div className="relative h-full w-full m-auto bg-white overflow-visible justify-center items-center border-b-2 border-slate-300 flex z-40" ref={searchRef}>
         <SerachBar onSearch={searchUserFromApi} onFocus={openSerachUser} ></SerachBar>
 

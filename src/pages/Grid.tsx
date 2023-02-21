@@ -32,39 +32,39 @@ export default function GridPage(props: GridPageProps) {
   useEffect(() => {
     getMediaPostsFromApi();
   }, []);
-  
-  useEffect(() => {})
 
-  const handleScroll = (e:any): void => {
+  useEffect(() => { })
+
+  const handleScroll = (e: any): void => {
     e.stopPropagation() // Handy if you want to prevent event bubbling to scrollable parent
-    if(e.target.scrollHeight - e.target.scrollTop < e.target.clientHeight + 300) {
+    if (e.target.scrollHeight - e.target.scrollTop < e.target.clientHeight + 300) {
       getMediaPostsFromApi();
     }
   };
 
-  const goPost = (id: string):void => {
-    navigate('/grid/'+ id);
+  const goPost = (id: string): void => {
+    navigate('/grid/' + id);
   }
 
   return (
-    <div className='p-4 h-full' onScroll={handleScroll}>
-        <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className="my-masonry-grid max-w-xl mx-auto"
-          columnClassName="my-masonry-grid_column">
-          {
-            mediaPosts.length > 0 && mediaPosts.map((post,index) => {
-              return (
-                <div key={index} className='p-1 cursor-pointer' onClick={() => {goPost('123')}}>
-                  <img key={index} className={`w-full rounded-md object-cover media-post-size-${post.size}`} src={post.imageUrl}/>
-                </div>
-              )
-            })
-          }
-        </Masonry>
-        <Routes>
-              <Route path='/:id' element={<PostModal />} />
-          </Routes>
-      </div>
+    <div className='p-4 h-full overflow-y-auto relative' onScroll={handleScroll}>
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className="my-masonry-grid max-w-xl mx-auto"
+        columnClassName="my-masonry-grid_column">
+        {
+          mediaPosts.length > 0 && mediaPosts.map((post, index) => {
+            return (
+              <div key={index} className='p-1 cursor-pointer' onClick={() => { goPost('123') }}>
+                <img key={index} className={`w-full rounded-md object-cover media-post-size-${post.size}`} src={post.imageUrl} />
+              </div>
+            )
+          })
+        }
+      </Masonry>
+      <Routes>
+        <Route path='/:id' element={<PostModal />} />
+      </Routes>
+    </div>
   )
 }
