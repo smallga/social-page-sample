@@ -15,7 +15,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div id="main" className='h-full w-full pb-14 pt-2 lg:pt-14 lg:pb-2'>
+    <div id="main" className='h-full w-full pb-14 pt-2 relative lg:pt-14 lg:pb-2'>
       <Header></Header>
       <SideBar></SideBar>
       <div id="content" className='h-full w-full mx-auto lg:pl-24'>

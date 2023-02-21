@@ -19,7 +19,7 @@ export default function SideBar(props: SideBarProps) {
   }
 
   return (
-    <div className="fixed  bg-white z-40 bottom-0 left-0 w-full h-12 flex justify-around lg:pt-2 lg:justify-start lg:flex-col lg:w-24 lg:top-0 lg:h-[calc(100%_-_3.5rem)] lg:border-r-2 ">
+    <div className="fixed  bg-white z-40 bottom-0 left-0 w-full h-12 flex justify-around lg:pt-2 lg:justify-start lg:flex-col lg:w-24 lg:top-0 lg:h-full lg:border-r-2 ">
       <NavLink className="hidden lg:block" to={""}>
         <IconBtn>
           <Camera className="w-8 h-8" />
