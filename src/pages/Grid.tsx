@@ -45,7 +45,7 @@ export default function GridPage(props: GridPageProps) {
   }
 
   return (
-    <div className='overflow-y-auto h-full p-4' onScroll={handleScroll}>
+    <div className='p-4' onScroll={handleScroll}>
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"

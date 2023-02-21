@@ -15,10 +15,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='h-full w-full flex justify-center'>
+    <div className='h-full w-full overflow-y-auto pb-14 pt-2 lg:pt-14 lg:pb-2'>
       <Header></Header>
       <SideBar></SideBar>
-      <div id="content" className='pb-14 pt-2 max-w-2xl w-full h-full overflow-y-hidden lg:pt-14 lg:pb-2'>
+      <div id="content" className='max-w-2xl w-full mx-auto'>
         <Routes>
             <Route path='/*' element={<Home />}/>
             <Route path='/grid/*' element={<GridPage />} />

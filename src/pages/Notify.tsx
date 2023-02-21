@@ -17,7 +17,7 @@ export default function NotifyPage(props: NotifyPageProps) {
   }, [])
 
   return (
-    <div className="h-full w-full overflow-y-auto">
+    <div className="w-full">
       {
         notifys.length > 0 && notifys.map((notify, index) => {
           return (

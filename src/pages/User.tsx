@@ -69,7 +69,7 @@ export default function UserPage(props: UserPageProps) {
   }, [userName])
 
   return (
-    <div className="w-full h-full overflow-y-auto p-4">
+    <div className="w-full p-4">
       <div className="flex p-6">
         <div className="w-32 flex justify-center">
           <PhotoSticker url='/images/mike.png' size={PhotoSizeEnum.LG} />

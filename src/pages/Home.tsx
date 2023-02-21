@@ -29,7 +29,7 @@ export default function HomePage(props: HomePageProps) {
 
   return (
     <>
-    <div className="h-full overflow-y-auto" onScroll={handleScroll}>
+    <div className="" onScroll={handleScroll}>
       {
         posts.length > 0 && posts.map((post,index) => (
           <Post key={index} post={post}></Post>
