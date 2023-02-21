@@ -29,12 +29,14 @@ export default function HomePage(props: HomePageProps) {
 
   return (
     <>
-    <div className="" onScroll={handleScroll}>
-      {
-        posts.length > 0 && posts.map((post,index) => (
-          <Post key={index} post={post}></Post>
-        ))
-      }
+    <div className="h-full w-full overflow-y-auto" onScroll={handleScroll}>
+      <div className="max-w-2xl mx-auto">
+        {
+          posts.length > 0 && posts.map((post,index) => (
+            <Post key={index} post={post}></Post>
+          ))
+        }
+      </div>
     </div>
       <Routes>
         <Route path='/p/:id' element={<PostModal />} />

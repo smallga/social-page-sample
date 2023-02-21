@@ -17,14 +17,16 @@ export default function NotifyPage(props: NotifyPageProps) {
   }, [])
 
   return (
-    <div className="w-full">
-      {
-        notifys.length > 0 && notifys.map((notify, index) => {
-          return (
-            <NotifyContent key={index} notify={notify} />
-          )
-        })
-      }
+    <div className="w-full overflow-y-auto px-2">
+      <div className="max-w-xl mx-auto">
+        {
+          notifys.length > 0 && notifys.map((notify, index) => {
+            return (
+              <NotifyContent key={index} notify={notify} />
+            )
+          })
+        }
+      </div>
 
       <Routes>
         <Route path='/p/:id' element={<PostModal />} />

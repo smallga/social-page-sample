@@ -44,137 +44,140 @@ export default [
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim",
+            "message": "回應了你的貼文",
             "time": "11/14/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla",
+            "message": "回應了你的貼文",
             "time": "9/17/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in",
+            "message": "回應了你的貼文",
             "time": "11/17/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et",
+            "message": "回應了你的貼文",
             "time": "10/19/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate",
+            "message": "回應了你的貼文",
             "time": "10/6/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis",
+            "message": "回應了你的貼文",
             "time": "7/13/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis",
+            "message": "回應了你的貼文",
             "time": "2/19/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla",
+            "message": "回應了你的貼文",
             "time": "2/8/2023"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "feugiat non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea",
+            "message": "回應了你的貼文",
             "time": "3/30/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
+            "message": "回應了你的貼文",
             "time": "9/24/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit",
+            "message": "回應了你的貼文",
             "time": "6/26/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id",
+            "message": "回應了你的貼文",
             "time": "9/27/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec",
+            "message": "回應了你的貼文",
             "time": "7/15/2022"
           }, {
-            "notifyUser": "US",
-            "message": "purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique",
+            "notifyUser": {
+              "name": "Lisa",
+              "photoUrl": ".//images/lisa.png",
+            },
+            "message": "回應了你的貼文",
             "time": "10/18/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla",
+            "message": "回應了你的貼文",
             "time": "12/24/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan",
+            "message": "回應了你的貼文",
             "time": "9/18/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus",
+            "message": "回應了你的貼文",
             "time": "4/19/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a",
+            "message": "回應了你的貼文",
             "time": "10/26/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit",
+            "message": "回應了你的貼文",
             "time": "10/1/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
               "photoUrl": ".//images/lisa.png",
             },
-            "message": "faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus",
+            "message": "回應了你的貼文",
             "time": "5/9/2022"
           }]
         };

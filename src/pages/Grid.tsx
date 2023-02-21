@@ -32,6 +32,8 @@ export default function GridPage(props: GridPageProps) {
   useEffect(() => {
     getMediaPostsFromApi();
   }, []);
+  
+  useEffect(() => {})
 
   const handleScroll = (e:any): void => {
     e.stopPropagation() // Handy if you want to prevent event bubbling to scrollable parent
@@ -45,10 +47,10 @@ export default function GridPage(props: GridPageProps) {
   }
 
   return (
-    <div className='p-4' onScroll={handleScroll}>
+    <div className='p-4 h-full' onScroll={handleScroll}>
         <Masonry
           breakpointCols={breakpointColumnsObj}
-          className="my-masonry-grid"
+          className="my-masonry-grid max-w-xl mx-auto"
           columnClassName="my-masonry-grid_column">
           {
             mediaPosts.length > 0 && mediaPosts.map((post,index) => {
