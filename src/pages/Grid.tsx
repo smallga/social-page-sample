@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import Masonry from 'react-masonry-css'
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import PostModal from '../components/PostModal';
@@ -69,7 +69,7 @@ export default function GridPage(props: GridPageProps) {
     setShowSerachUserData(false);
   }, [])
 
-  const resetSearchUser  = useCallback(() => {
+  const resetSearchUser = useCallback(() => {
     closeSearchUser();
     searchUserFromApi('');
   }, [])
@@ -80,21 +80,29 @@ export default function GridPage(props: GridPageProps) {
     closeSearchUser();
   }, [])
 
+  const showGrid = useMemo(() => mediaPosts.length > 0 && mediaPosts.map((post, index) => {
+    return (
+      <div key={index} className='p-1 cursor-pointer' onClick={() => { goPost('123') }}>
+        <img key={index} className={`w-full rounded-md object-cover media-post-size-${post.size}`} src={post.imageUrl} />
+      </div>
+    )
+  }), [mediaPosts])
+
+  const showSearchUserData = useMemo(() => (searchedUsers.length > 0 ?
+    searchedUsers.map((user, index) => (
+      <UserDataItem key={index} user={user} clickFun={() => (gotoUserPage(user))}></UserDataItem>
+    ))
+    :
+    <p className="text-left text-slate-400 h-8">沒有符合結果</p>)
+    , [searchedUsers])
+
   return (
     <div className='p-4 h-full overflow-y-auto' onScroll={handleScroll}>
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="my-masonry-grid max-w-xl mx-auto"
         columnClassName="my-masonry-grid_column">
-        {
-          mediaPosts.length > 0 && mediaPosts.map((post, index) => {
-            return (
-              <div key={index} className='p-1 cursor-pointer' onClick={() => { goPost('123') }}>
-                <img key={index} className={`w-full rounded-md object-cover media-post-size-${post.size}`} src={post.imageUrl} />
-              </div>
-            )
-          })
-        }
+        {showGrid}
       </Masonry>
       <Routes>
         <Route path='/:id' element={<PostModal />} />
@@ -107,14 +115,7 @@ export default function GridPage(props: GridPageProps) {
       {
         showSerachUserData && <div aria-label='search-backgroud' onClick={closeSearchUser} className='absolute left-0 bottom-24 w-full flex items-end bg-opacity-40 bg-slate-800 h-[calc(100%_-_6rem)] overflow-y-auto lg:hidden'>
           <div className='w-full px-2 bg-white overflow-y-auto rounded-t-md max-h-[500px]'>
-            {
-              searchedUsers.length > 0 ?
-                searchedUsers.map((user, index) => (
-                  <UserDataItem key={index} user={user} clickFun={() => (gotoUserPage(user))}></UserDataItem>
-                ))
-                :
-                <p className="text-left text-slate-400 h-8">沒有符合結果</p>
-            }
+            {showSearchUserData}
           </div>
         </div>
       }

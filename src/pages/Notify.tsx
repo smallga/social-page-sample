@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import NotifyContent from "../components/Notify";
 import PostModal from "../components/PostModal";
@@ -16,16 +16,16 @@ export default function NotifyPage(props: NotifyPageProps) {
     })
   }, [])
 
+  const showNotifys = useMemo(() => notifys.length > 0 && notifys.map((notify, index) => {
+    return (
+      <NotifyContent key={index} notify={notify} />
+    )
+  }), [notifys])
+
   return (
     <div className="w-full overflow-y-auto px-2">
       <div className="max-w-xl mx-auto">
-        {
-          notifys.length > 0 && notifys.map((notify, index) => {
-            return (
-              <NotifyContent key={index} notify={notify} />
-            )
-          })
-        }
+        {showNotifys}
       </div>
 
       <Routes>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Post from "../components/Post";
 import PostModal from "../components/PostModal";
@@ -10,6 +10,7 @@ interface HomePageProps {
 export default function HomePage(props: HomePageProps) {
 
   const [posts, setPosts] = useState<PostModel[]>([]);
+  const [test, setTest] = useState(false);
 
   useEffect(() => {
     getPost().then(res => {
@@ -26,16 +27,19 @@ export default function HomePage(props: HomePageProps) {
     }
   };
 
+  const showPost = useMemo(() => 
+    posts.length > 0 && posts.map((post,index) => {
+      return (
+      <Post key={index} post={post}></Post>
+    )})
+  , [posts])
+
 
   return (
     <>
     <div className="h-full w-full overflow-y-auto" onScroll={handleScroll}>
       <div className="max-w-2xl mx-auto">
-        {
-          posts.length > 0 && posts.map((post,index) => (
-            <Post key={index} post={post}></Post>
-          ))
-        }
+        {showPost}
       </div>
     </div>
       <Routes>
