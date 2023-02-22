@@ -39,7 +39,7 @@ export default function PostModal(props: PostModalProps) {
 		if ((e.key === 'Enter' || e.keyCode === 13) && !isComposing && e.target.value.length > 0) {
 			let newReply:ReplyModel = {
 				replyAccountName: 'mike',
-				replyAccountPhoto: './images/mike.png',
+				replyAccountPhoto: '1',
 				replyMessage: e.target.value,
 				replyDate: '剛剛',
 			}

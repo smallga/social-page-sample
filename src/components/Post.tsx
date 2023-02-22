@@ -86,7 +86,7 @@ export default function Post(props: PostProps) {
 		if ((e.key === 'Enter' || e.keyCode === 13) && !isComposing && e.target.value.length > 0) {
 			let newReply: ReplyModel = {
 				replyAccountName: 'mike',
-				replyAccountPhoto: './images/mike.png',
+				replyAccountPhoto: '/social-page-sample/dist/images/mike.png',
 				replyMessage: e.target.value,
 				replyDate: '剛剛',
 			}
