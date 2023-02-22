@@ -129,7 +129,7 @@ export default function Post(props: PostProps) {
 							{`查看全部${props.post.replyCount}則回覆`}
 						</div>
 						<div className={`flex items-center py-2`}>
-							<PhotoSticker url='social-page-sample/dist/images/mike.png' />
+							<PhotoSticker url='/social-page-sample/dist/images/mike.png' />
 							<input className="ml-2 w-full" placeholder="新增留言..."
 								onKeyUp={replyKeyupChange}
 								onCompositionStart={e => setIsComposing(true)}
