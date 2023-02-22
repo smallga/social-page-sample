@@ -16,12 +16,12 @@ export default [
       url: "/api/searchUser",
       method: "get",
       response: ({body, query}: any) => {
-        let data = [{name:'lisa', photoUrl: './images/lisa.png'}
-        ,{name:'Amy', photoUrl: './images/amy.png'}
-        ,{name:'Cindy', photoUrl: './images/cindy.png'}
-        ,{name:'Duke', photoUrl: './images/duke.png'}
-        ,{name:'Joan', photoUrl: './images/joan.png'}
-        ,{name:'mike', photoUrl: './images/mike.png'}];
+        let data = [{name:'lisa', photoUrl: '/social-page-sample/dist/images/lisa.png'}
+        ,{name:'Amy', photoUrl: '/social-page-sample/dist/images/amy.png'}
+        ,{name:'Cindy', photoUrl: '/social-page-sample/dist/images/cindy.png'}
+        ,{name:'Duke', photoUrl: '/social-page-sample/dist/images/duke.png'}
+        ,{name:'Joan', photoUrl: '/social-page-sample/dist/images/joan.png'}
+        ,{name:'mike', photoUrl: '/social-page-sample/dist/images/mike.png'}];
         if(query.searchQuery.length > 0) {
           data = data.filter(item => item.name.toLocaleLowerCase().indexOf(query.searchQuery.toLocaleLowerCase()) > -1);
         }
@@ -42,140 +42,140 @@ export default [
           data: [{
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "11/14/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "9/17/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "11/17/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "10/19/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "10/6/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "7/13/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "2/19/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "2/8/2023"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "3/30/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "9/24/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "6/26/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "9/27/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "7/15/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "10/18/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "12/24/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "9/18/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "4/19/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "10/26/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "10/1/2022"
           }, {
             "notifyUser": {
               "name": "Lisa",
-              "photoUrl": ".//images/lisa.png",
+              "photoUrl": "/social-page-sample/dist//images/lisa.png",
             },
             "message": "回應了你的貼文",
             "time": "5/9/2022"
@@ -454,27 +454,27 @@ export default [
           message: "ok",
           data: [{
             "replyAcCountName": "Terence",
-            "replyAccountPhoto": ".//images/lisa.png",
+            "replyAccountPhoto": "/social-page-sample/dist//images/lisa.png",
             "replyMessage": "primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla"
           }, {
             "replyAcCountName": "Wakefield",
-            "replyAccountPhoto": ".//images/lisa.png",
+            "replyAccountPhoto": "/social-page-sample/dist//images/lisa.png",
             "replyMessage": "non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus"
           }, {
             "replyAcCountName": "Allistir",
-            "replyAccountPhoto": ".//images/lisa.png",
+            "replyAccountPhoto": "/social-page-sample/dist//images/lisa.png",
             "replyMessage": "at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat"
           }, {
             "replyAcCountName": "Brandice",
-            "replyAccountPhoto": ".//images/lisa.png",
+            "replyAccountPhoto": "/social-page-sample/dist//images/lisa.png",
             "replyMessage": "nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum"
           }, {
             "replyAcCountName": "Karlis",
-            "replyAccountPhoto": ".//images/lisa.png",
+            "replyAccountPhoto": "/social-page-sample/dist//images/lisa.png",
             "replyMessage": "tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat"
           }, {
             "replyAcCountName": "Dorothea",
-            "replyAccountPhoto": ".//images/lisa.png",
+            "replyAccountPhoto": "/social-page-sample/dist//images/lisa.png",
             "replyMessage": "iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt"
           }]
         };

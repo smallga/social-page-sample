@@ -55,14 +55,16 @@ export default function UserPage(props: UserPageProps) {
     if (userName) {
       searchUser(userName).then(
         res => {
-          setUser({
-            name: res.data.data.name,
-            photoUrl: res.data.data.photoUrl,
-            description: '哈囉我是Brian, 以下是我的連結網址:\nGit:https://github.com/smallga',
-            posts: 43,
-            followers: 543,
-            tracking: 88,
-          });
+          if(res.data.data && res.data.data.length > 0) {
+            setUser({
+              name: res.data.data[0].name,
+              photoUrl: res.data.data[0].photoUrl,
+              description: `哈囉我是${res.data.data[0].name}, 以下是我的連結網址:\nGit:https://github.com/smallga`,
+              posts: 43,
+              followers: 543,
+              tracking: 88,
+            });
+          }
         }
       )
     }
@@ -73,7 +75,7 @@ export default function UserPage(props: UserPageProps) {
       <div className="max-w-xl mx-auto">
         <div className="flex p-6">
           <div className="w-32 flex justify-center">
-            <PhotoSticker url='./images/mike.png' size={PhotoSizeEnum.LG} />
+            <PhotoSticker url={user.photoUrl} size={PhotoSizeEnum.LG} />
           </div>
           <div className="max-w-[300px] mx-auto flex flex-1 items-center justify-evenly">
             <div className="mx-2">
@@ -113,7 +115,7 @@ export default function UserPage(props: UserPageProps) {
             {
               userPosts.length > 0 && userPosts.map((userPost, index) => {
                 return (
-                  <div className='p-1'>
+                  <div key={index} className='p-1'>
                     <img key={index} className={`w-full rounded-md object-cover media-post-size-${userPost.size}`} src={userPost.imageUrl} />
                   </div>
                 )
