@@ -1,6 +1,6 @@
 ## Demo 網址
 
-[Demo](https://github.com/Azure/azure-content/blob/master/contributor-guide/contributor-guide-index.md)
+[Demo](https://smallga.github.io/social-page-sample/dist/)
 
 ## 專案目的
 
