@@ -99,7 +99,7 @@ export default function GridPage(props: GridPageProps) {
       <Routes>
         <Route path='/:id' element={<PostModal />} />
       </Routes>
-      <div className='absolute bottom-12 left-0 h-12 w-full bg-white lg:hidden'>
+      <div className='fixed bottom-12 left-0 h-12 w-full bg-white lg:hidden'>
         <div className='flex items-center py-1 px-4'>
           <SerachBar onSearch={searchUserFromApi} onFocus={showSearchUser} onBlur={resetSearchUser} showCancle={true}></SerachBar>
         </div>
