@@ -17,7 +17,7 @@ export default function Reply(props: ReplyProps) {
             {reply.replyDate}
           </span>
 				</div>
-				<div className="text-slate-500 mt-1">
+				<div aria-label="reply-message" className="text-slate-500 mt-1">
 					{reply.replyMessage}
 				</div>
 			</div>

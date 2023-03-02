@@ -57,7 +57,7 @@ export default function NotifyContent(this: any, props: NotifyContentProps) {
           {notify.message}
         </div>
       </div>
-      <div className="w-12 flex items-end text-slate-300 text-xs">
+      <div aria-label="notify-time" className="w-12 flex items-end text-slate-300 text-xs">
           {showDate()}
       </div>
     </div>

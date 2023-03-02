@@ -46,7 +46,7 @@ export default function SerachBar(props: SerachBarProps) {
   return (
     <div className="w-full flex items-center">
       <div className="rounded-md bg-slate-100 w-full h-10 p-2">
-          <input type="text" placeholder="搜尋朋友" className="w-full h-6 m-auto bg-transparent border-none" 
+          <input aria-label="search-input" type="text" placeholder="搜尋朋友" className="w-full h-6 m-auto bg-transparent border-none" 
             ref={inputRef}
             onChange={e => SetSearchText(e.target.value)}
             // onBlur={handleBlur}
@@ -55,7 +55,7 @@ export default function SerachBar(props: SerachBarProps) {
       </div>
       {
         showCancle && isOnfocus && <div onClick={handleBlur} className="w-12 overflow-hidden animate-growUpIn">
-          <div className="w-12 text-slate-400">
+          <div aria-label="search-cancle" className="w-12 text-slate-400">
             取消
           </div>
         </div>

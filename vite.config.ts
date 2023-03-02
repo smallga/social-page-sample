@@ -1,9 +1,14 @@
-import { defineConfig } from 'vite'
+import { defineConfig, UserConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { viteMockServe } from 'vite-plugin-mock'
 import svgr from "vite-plugin-svgr";
+import type { InlineConfig } from 'vitest';
 
 const localEnabled = process.env.USE_MOCK === 'true';
+
+interface VitestConfigExport extends UserConfig {
+  test: InlineConfig;
+}
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -23,4 +28,9 @@ export default defineConfig({
     supportTs: true,
   }),svgr(),
   ],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: 'src/setupTests.ts',
+  },
 })

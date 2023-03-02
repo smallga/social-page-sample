@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { use } from "chai";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Post from "../components/Post";
 import PostModal from "../components/PostModal";
 import { getPost } from "../server/post";
@@ -9,6 +10,7 @@ interface HomePageProps {
 }
 export default function HomePage(props: HomePageProps) {
 
+  const navigate = useNavigate();
   const [posts, setPosts] = useState<PostModel[]>([]);
   const [test, setTest] = useState(false);
 
@@ -27,10 +29,14 @@ export default function HomePage(props: HomePageProps) {
     }
   };
 
+  const goPost = useCallback((postId: string) => {
+    navigate('/p/' + postId);
+  }, [])
+
   const showPost = useMemo(() => 
     posts.length > 0 && posts.map((post,index) => {
       return (
-      <Post key={index} post={post}></Post>
+      <Post key={index} post={post} goPost={() => {goPost('123')}}></Post>
     )})
   , [posts])
 
