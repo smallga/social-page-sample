@@ -51,7 +51,7 @@ export default function PostModal(props: PostModalProps) {
 
 
   return (
-    <div aria-label="modal-background" className="fixed top-0 left-0 w-full h-full z-50 bg-opacity-40 bg-slate-800 md:py-8" onClick={closeModal}>
+    <div aria-label="modal-background" className="fixed top-0 left-0 w-full h-full z-[postModal] bg-opacity-40 bg-slate-800 md:py-8" onClick={closeModal}>
       <div aria-label="post-modal-content" className="mx-auto h-full animate-pulseIn">
         <div aria-label="post-modal-content" className="max-w-[568px] w-full h-[calc(100%-3rem)] bg-white py-2 overflow-y-auto mx-auto sm:rounded-t-md sm:h-[calc(100%-3rem)]" onClick={(e) => { e.stopPropagation() }}>
           <div className="flex relative items-center justify-center sm:hidden">

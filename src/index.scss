@@ -85,6 +85,11 @@ input {
   }
 }
 
+textarea:focus, input:focus{
+  outline: 0;
+}
+
+
 //icon
 
 svg.like {
@@ -167,4 +172,13 @@ a {
 .media-post-size-2 {
   min-height: calc(294px + 0.5rem);
   max-height: calc(294px + 0.5rem);
+}
+
+//button
+
+button {
+  transition-duration: 0.3s;
+  &:hover {
+    opacity: 0.9;
+  }
 }

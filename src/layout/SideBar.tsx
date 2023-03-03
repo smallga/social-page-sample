@@ -7,15 +7,23 @@ import { ReactComponent as Camera } from '../assets/icon/camera.svg'
 import PhotoSticker from "../components/PhotoSticker";
 
 interface SideBarProps {
+  handleClickAdd?: Function,
 }
 export default function SideBar(props: SideBarProps) {
 
   const IconBtn = (IconProps: any) => {
     return (
-      <div className="w-full h-full flex items-center justify-center lg:h-16">
+      <div className="w-full h-full flex items-center justify-center lg:h-16" {...IconProps}>
         {IconProps.children}
       </div>
     )
+  }
+
+  const clickAdd = () => {
+    const { handleClickAdd } = props;
+    if (handleClickAdd) {
+      handleClickAdd();
+    }
   }
 
   return (
@@ -35,11 +43,11 @@ export default function SideBar(props: SideBarProps) {
           <Grid className="w-8 h-8 grid" />
         </IconBtn>
       </NavLink>
-      <NavLink to={""}>
-        <IconBtn>
+      <a className="z-[150]">
+        <IconBtn onClick={clickAdd}>
           <NewPost className="w-8 h-8" />
         </IconBtn>
-      </NavLink>
+      </a>
       <NavLink to={"/notify"}>
         <IconBtn>
           <Bell className="w-8 h-8 bell" />
