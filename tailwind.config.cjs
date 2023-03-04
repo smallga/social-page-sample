@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     animation: {
       pulseIn: 'pulseIn 0.3s ease-in-out',
+      pulseOut: 'pulseOut 0.3s ease-in-out',
       growUpIn: 'growUpIn 0.3s ease-in-out',
       transformUp: 'transformUp 0.3s ease-in-out',
       transformDown: 'transformDown 0.3s ease-in-out',
@@ -25,7 +26,14 @@ module.exports = {
         '50%': { transform: 'scale(1)' },
         '75%': { transform: 'scale(1.05)' },
         '100%': { transform: 'scale(1)' },
-      },growUpIn: {
+      },
+      pulseOut: {
+        '0%': { transform: 'scale(1)' },
+        '25%': { transform: 'scale(1.05)' },
+        '50%': { transform: 'scale(1)' },
+        '100%': { transform: 'scale(0.25)' },
+      }
+      ,growUpIn: {
         '0%': { width: '0px' },
         '50%': { width: '1rem' },
         '75%': { width: '2rem' },
@@ -71,6 +79,10 @@ module.exports = {
         'postModal': '90',
         'createPost': '100',
         'ceateIcon': '150',
+      },
+      screens: {
+        'xs': {'min':'1px','max': '1023px'},
+        // => @media (min-width: 576px) { ... }
       }
     }
   },

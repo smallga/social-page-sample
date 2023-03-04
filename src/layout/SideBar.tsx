@@ -43,7 +43,7 @@ export default function SideBar(props: SideBarProps) {
           <Grid className="w-8 h-8 grid" />
         </IconBtn>
       </NavLink>
-      <a className="z-[150]">
+      <a className="z-[150] cursor-pointer">
         <IconBtn onClick={clickAdd}>
           <NewPost className="w-8 h-8" />
         </IconBtn>
