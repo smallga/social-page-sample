@@ -1,9 +1,12 @@
 import { use } from "chai";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { useSelector } from "react-redux";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Post from "../components/Post";
 import PostModal from "../components/PostModal";
-import { getPost } from "../server/post";
+import { useAppDispatch } from "../hook/redux-hook";
+import { getPostIsLoading, getPosts, getPostsFirst, getPreviosPost } from "../store/reducers/post-slice";
+import { sagaAction } from "../store/sagas/sagaAction";
 import { PostModel } from "../utility/interface/post-model";
 
 interface HomePageProps {
@@ -11,21 +14,22 @@ interface HomePageProps {
 export default function HomePage(props: HomePageProps) {
 
   const navigate = useNavigate();
-  const [posts, setPosts] = useState<PostModel[]>([]);
-  const [test, setTest] = useState(false);
+  const dispatch = useAppDispatch();
+  const posts = useSelector(getPosts);
+  const postsIsLoading = useSelector(getPostIsLoading);
 
   useEffect(() => {
-    getPost().then(res => {
-      setPosts(res.data.data);
-    })
-  }, [])
+    if(dispatch && !postsIsLoading && posts.length === 0 ) {
+      dispatch(getPostsFirst());
+    }
+  }, [dispatch])
 
   const handleScroll = (e:any): void => {
     e.stopPropagation() // Handy if you want to prevent event bubbling to scrollable parent
     if(e.target.scrollHeight - e.target.scrollTop < e.target.clientHeight + 300) {
-      getPost().then(res => {
-        setPosts([...posts, ...res.data.data]);
-      })
+      if(!postsIsLoading) {
+        dispatch(getPreviosPost());
+      }
     }
   };
 
