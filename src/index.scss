@@ -85,18 +85,22 @@ input {
   }
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
   outline: 0;
 }
 
+textarea {
+  background-color: #ffffff !important;
+}
 
 //icon
 
 svg.like {
-    stroke: #f91a1a;
-    path{
-      fill: #f91a1a !important;
-    }
+  stroke: #f91a1a;
+  path {
+    fill: #f91a1a !important;
+  }
 }
 
 a {
@@ -106,13 +110,13 @@ a {
 .active {
   .bell {
     path {
-      fill: #000000 !important
+      fill: #000000 !important;
     }
   }
 
   .home {
     path {
-      fill: #000000!important;
+      fill: #000000 !important;
       stroke: #000000 !important;
       stroke-width: 2 !important;
     }
@@ -120,7 +124,7 @@ a {
 
   .grid {
     path {
-      fill: #000000!important;
+      fill: #000000 !important;
       stroke: #000000 !important;
       stroke-width: 1 !important;
     }
@@ -161,7 +165,6 @@ a {
   padding-left: 0px; /* gutter size */
   background-clip: padding-box;
 }
-
 
 //media-post
 .media-post-size-1 {
